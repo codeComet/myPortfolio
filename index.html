@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description" content="React developer portfolio" />
+    <meta name="keyword" content="react, portfolio, javascript, developer" />
+    <link rel="icon" href="assets/img/b.png" type="image/x-icon" />
     <!--==================== UNICONS ====================-->
     <link
       rel="stylesheet"
@@ -20,6 +22,12 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <title>Bishal's Portfolio</title>
+
+    <script
+      lang="javascript"
+      src="assets/js/gen_validatorv31.js"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -161,7 +169,11 @@
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
-          <img src="assets/img/2.jpg" alt="me" class="about__img" />
+          <img
+            src="assets/img/2.jpg"
+            alt="about section picture"
+            class="about__img"
+          />
 
           <div class="about__data">
             <p class="about__description">
@@ -196,7 +208,7 @@
             <div class="about__buttons">
               <a
                 download=""
-                href="assets/pdf/Alexa-Cv.pdf"
+                href="assets/pdf/redwan alam bishal.pdf"
                 class="button button--flex"
               >
                 Download CV <i class="uil uil-download-alt button__icon"></i>
@@ -711,7 +723,7 @@
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/portfolio1.jpg"
-                alt="portfolio"
+                alt="portfolio image"
                 class="portfolio__img"
               />
 
@@ -734,7 +746,7 @@
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="https://colorlib.com/wp/wp-content/uploads/sites/2/ecommerce-website-builder.jpg"
-                alt="portfolio"
+                alt="portfolio image"
                 class="portfolio__img"
               />
 
@@ -756,7 +768,7 @@
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="https://miro.medium.com/max/1400/1*2InZ9dVyb4004h7AOf0VmQ.png"
-                alt="portfolio"
+                alt="portfolio image"
                 class="portfolio__img"
               />
 
@@ -789,7 +801,7 @@
                   React.js and Spotify API
                 </p>
                 <a
-                  href="https://netflix-clone-42cd8.web.app/"
+                  href="https://spotify-clone10.netlify.app"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                   >Demo <i class="uil uil-arrow-right button__icon"></i
@@ -878,7 +890,7 @@
                   />
 
                   <div>
-                    <h3 class="testimonial__name">Sara Smith</h3>
+                    <h3 class="testimonial__name">Isac King</h3>
                     <span class="testimonial__client">Client</span>
                   </div>
                 </div>
@@ -893,8 +905,7 @@
               </div>
 
               <p class="testimonial__description">
-                I get a good impression, I carry out my project with all the
-                possible quality and attention and got 24hr support
+                Very hard working and knows what the client wants.
               </p>
             </div>
 
@@ -909,7 +920,7 @@
                   />
 
                   <div>
-                    <h3 class="testimonial__name">Sara Smith</h3>
+                    <h3 class="testimonial__name">Nur Shahria</h3>
                     <span class="testimonial__client">Client</span>
                   </div>
                 </div>
@@ -924,8 +935,8 @@
               </div>
 
               <p class="testimonial__description">
-                I get a good impression, I carry out my project with all the
-                possible quality and attention and got 24hr support
+                Had my consulting agency site up and running within a week. Very
+                fast service indeed.
               </p>
             </div>
           </div>
@@ -953,7 +964,7 @@
 
               <div>
                 <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">contact@devbishal.com</span>
+                <span class="contact__subtitle">bishal@devbishal.com</span>
               </div>
             </div>
             <div class="contact__information">
@@ -966,20 +977,25 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
+          <form
+            action="mail-handler.php"
+            method="post"
+            class="contact__form grid"
+            name="myContactForm"
+          >
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="name" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+                <input type="text" class="contact__input" name="name" />
               </div>
               <div class="contact__content">
                 <label for="email" class="contact__label">Email</label>
-                <input type="email" class="contact__input" />
+                <input type="email" class="contact__input" name="email" />
               </div>
             </div>
             <div class="contact__content">
               <label for="project" class="contact__label">Project</label>
-              <input type="text" class="contact__input" />
+              <input type="text" class="contact__input" name="project" />
             </div>
             <div class="contact__content">
               <label for="message" class="contact__label">Message</label>
@@ -989,14 +1005,23 @@
                 cols="0"
                 rows="7"
                 class="contact__input"
+                name="message"
               ></textarea>
             </div>
 
             <div>
-              <a href="#" class="button button--flex">
-                Send Message
-                <i class="uil uil-message button__icon"></i>
-              </a>
+              <input
+                type="submit"
+                name="submit"
+                class="button button--flex"
+                value="Send Message"
+                style="
+                  border: none;
+                  position: relative;
+                  font-weight: 500;
+                  font-family: 'Poppins';
+                "
+              />
             </div>
           </form>
         </div>
@@ -1055,5 +1080,16 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./assets/js/main.js"></script>
+    <script language="JavaScript">
+      var frmvalidator = new Validator("myContactForm");
+      frmvalidator.addValidation("name", "req", "Please provide your name");
+      frmvalidator.addValidation("email", "req", "Please provide your email");
+      frmvalidator.addValidation("message", "req", "Please write your message");
+      frmvalidator.addValidation(
+        "email",
+        "email",
+        "Please enter a valid email address"
+      );
+    </script>
   </body>
 </html>
