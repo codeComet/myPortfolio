@@ -22,6 +22,20 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <title>Bishal's Portfolio</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-215692046-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-215692046-1");
+    </script>
 
     <script
       lang="javascript"
@@ -87,7 +101,7 @@
           <div class="home__content grid">
             <div class="home__social">
               <a
-                href="https://www.linkedin.com/in/redwan-alam-bishal-139a4b11a/"
+                href="https://www.linkedin.com/in/redwan-alam-bishal/"
                 class="home__social-icon"
                 target="_blank"
               >
@@ -382,6 +396,18 @@
                 </div>
               </div>
             </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Figma</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__js"></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -508,6 +534,8 @@
                   <span class="qualification__line"></span>
                 </div>
               </div>
+
+              <!--===========content=================-->
               <!-- ==========content 2============= -->
               <div class="qualification__data">
                 <div></div>
@@ -516,6 +544,17 @@
                   <span class="qualification__line"></span>
                 </div>
                 <div>
+                  <h3 class="qualification__title">Frontend Developer</h3>
+                  <span class="qualification__subtitle">IT Intern, Aarong</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    Jan 2022 - Apr 2022
+                  </div>
+                </div>
+              </div>
+              <!-- ==========content 2============= -->
+              <div class="qualification__data">
+                <div>
                   <h3 class="qualification__title">Translator</h3>
                   <span class="qualification__subtitle">BRAC</span>
                   <div class="qualification__calender">
@@ -523,9 +562,19 @@
                     2018-2019
                   </div>
                 </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div></div>
               </div>
               <!-- ==================content - 3================= -->
               <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!--<span class="qualification__line"></span>-->
+                </div>
                 <div>
                   <h3 class="qualification__title">Freelancer</h3>
                   <span class="qualification__subtitle">Fiverr, Upwork</span>
@@ -533,10 +582,6 @@
                     <i class="uil uil-calendar-alt"></i>
                     2017-2020
                   </div>
-                </div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
                 </div>
               </div>
             </div>
@@ -561,10 +606,7 @@
             </div>
 
             <span
-              class="
-                button button--flex button--small button--link
-                services__button
-              "
+              class="button button--flex button--small button--link services__button"
             >
               View More
               <i class="uil uil-arrow-right button__icon"></i>
@@ -615,10 +657,7 @@
             </div>
 
             <span
-              class="
-                button button--flex button--small button--link
-                services__button
-              "
+              class="button button--flex button--small button--link services__button"
             >
               View More
               <i class="uil uil-arrow-right button__icon"></i>
@@ -665,10 +704,7 @@
             </div>
 
             <span
-              class="
-                button button--flex button--small button--link
-                services__button
-              "
+              class="button button--flex button--small button--link services__button"
             >
               View More
               <i class="uil uil-arrow-right button__icon"></i>
@@ -719,6 +755,29 @@
 
         <div class="portfolio__container container swiper mySwiper">
           <div class="swiper-wrapper">
+            <!-- ======portfolio 0========== -->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/realstate.jpg"
+                alt="portfolio image"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Realstate website</h3>
+                <p class="portfolio__description">
+                  A Real state web page made with React.js
+                </p>
+                <a
+                  href="https://realstate-react.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo <i class="uil uil-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+
             <!-- ======portfolio 1========== -->
             <div class="portfolio__content grid swiper-slide">
               <img
@@ -756,7 +815,7 @@
                   Ecommerce site with all functionalities. Made with commerce.js
                 </p>
                 <a
-                  href="https://moment.devbishal.com"
+                  href="http://ecommerce.devbishal.com/"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                   >Demo <i class="uil uil-arrow-right button__icon"></i
@@ -767,7 +826,7 @@
             <!-- ============portfolio-3=========== -->
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="https://miro.medium.com/max/1400/1*2InZ9dVyb4004h7AOf0VmQ.png"
+                src="./assets/img/net.png"
                 alt="portfolio image"
                 class="portfolio__img"
               />
@@ -802,6 +861,28 @@
                 </p>
                 <a
                   href="https://spotify-clone10.netlify.app"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo <i class="uil uil-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+            <!--=======================Portfolio 5=====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="../assets/img/video.jpg"
+                alt="portfolio"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Video Chat App</h3>
+                <p class="portfolio__description">
+                  A video chat app made with Socket.io and Web-RTC enabling
+                  users to communicate realtime.
+                </p>
+                <a
+                  href="https://videochat-me.netlify.app/"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                   >Demo <i class="uil uil-arrow-right button__icon"></i
