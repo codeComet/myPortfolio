@@ -31,8 +31,35 @@ $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
+
 //done. redirect to thank-you page.
 header('Location: thank-you.html');
+
+//  if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
+
+//                 // Google secret API
+//                 $secretAPIkey = '6LcicGAfAAAAAGm_UIwcWCEgo_4ZjGovZ9vIlawI';
+
+//                 // reCAPTCHA response verification
+//                 $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretAPIkey.'&response='.$_POST['g-recaptcha-response']);
+
+//                 // Decode JSON data
+//                 $response = json_decode($verifyResponse);
+//                     if($response->success){
+                        
+//                     } else {
+//                         $response = array(
+//                             "status" => "alert-danger",
+//                             "message" => "Robot verification failed, please try again."
+//                         );
+//                     }       
+//             } else{ 
+//                 $response = array(
+//                     "status" => "alert-danger",
+//                     "message" => "Plese check on the reCAPTCHA box."
+//                 );
+//             } 
+
 
 
 // Function to validate against any email injection attempts

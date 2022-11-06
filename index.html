@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="React developer portfolio" />
-    <meta name="keyword" content="react, portfolio, javascript, developer" />
+    <meta name="description" content="React developer portfolio">
+    <meta name="keyword" content="react, portfolio, javascript, developer">
     <link rel="icon" href="assets/img/b.png" type="image/x-icon" />
     <!--==================== UNICONS ====================-->
     <link
@@ -22,20 +22,15 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <title>Bishal's Portfolio</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-215692046-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-215692046-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag("config", "UA-215692046-1");
-    </script>
+  gtag('config', 'UA-215692046-1');
+</script>
 
     <script
       lang="javascript"
@@ -183,11 +178,7 @@
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
-          <img
-            src="assets/img/2.jpg"
-            alt="about section picture"
-            class="about__img"
-          />
+          <img src="assets/img/2.jpg" alt="about section picture" class="about__img" />
 
           <div class="about__data">
             <p class="about__description">
@@ -396,7 +387,7 @@
                 </div>
               </div>
             </div>
-
+            
             <div class="skills__list grid">
               <div class="skills__data">
                 <div class="skills__titles">
@@ -534,7 +525,7 @@
                   <span class="qualification__line"></span>
                 </div>
               </div>
-
+              
               <!--===========content=================-->
               <!-- ==========content 2============= -->
               <div class="qualification__data">
@@ -554,6 +545,7 @@
               </div>
               <!-- ==========content 2============= -->
               <div class="qualification__data">
+                
                 <div>
                   <h3 class="qualification__title">Translator</h3>
                   <span class="qualification__subtitle">BRAC</span>
@@ -570,7 +562,7 @@
               </div>
               <!-- ==================content - 3================= -->
               <div class="qualification__data">
-                <div></div>
+                  <div></div>
                 <div>
                   <span class="qualification__rounder"></span>
                   <!--<span class="qualification__line"></span>-->
@@ -583,6 +575,7 @@
                     2017-2020
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -606,7 +599,10 @@
             </div>
 
             <span
-              class="button button--flex button--small button--link services__button"
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
             >
               View More
               <i class="uil uil-arrow-right button__icon"></i>
@@ -657,7 +653,10 @@
             </div>
 
             <span
-              class="button button--flex button--small button--link services__button"
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
             >
               View More
               <i class="uil uil-arrow-right button__icon"></i>
@@ -704,7 +703,10 @@
             </div>
 
             <span
-              class="button button--flex button--small button--link services__button"
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
             >
               View More
               <i class="uil uil-arrow-right button__icon"></i>
@@ -755,8 +757,9 @@
 
         <div class="portfolio__container container swiper mySwiper">
           <div class="swiper-wrapper">
-            <!-- ======portfolio 0========== -->
-
+              
+              <!-- ======portfolio 0========== -->
+              
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/realstate.jpg"
@@ -776,12 +779,35 @@
                   >Demo <i class="uil uil-arrow-right button__icon"></i
                 ></a>
               </div>
-            </div>
+            </div>  
+            
+              <!-- ======portfolio 0========== -->
+              
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/space-min.png"
+                alt="portfolio image"
+                class="portfolio__img"
+              />
 
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">SpaceX Landing Page</h3>
+                <p class="portfolio__description">
+                  A Landing page for spaceX made with React.js
+                </p>
+                <a
+                  href="https://space-landingpage.netlify.app//"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo <i class="uil uil-arrow-right button__icon"></i
+                ></a>
+              </div>
+            </div>  
+              
             <!-- ======portfolio 1========== -->
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/portfolio1.jpg"
+                src="assets/img/moment.png"
                 alt="portfolio image"
                 class="portfolio__img"
               />
@@ -878,8 +904,8 @@
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Video Chat App</h3>
                 <p class="portfolio__description">
-                  A video chat app made with Socket.io and Web-RTC enabling
-                  users to communicate realtime.
+                  A video chat app made with Socket.io and Web-RTC enabling users
+                  to communicate realtime.
                 </p>
                 <a
                   href="https://videochat-me.netlify.app/"
@@ -1058,6 +1084,8 @@
             </div>
           </div>
 
+
+        
           <form
             action="mail-handler.php"
             method="post"
@@ -1086,9 +1114,10 @@
                 cols="0"
                 rows="7"
                 class="contact__input"
-                name="message"
               ></textarea>
             </div>
+            
+   
 
             <div>
               <input
@@ -1104,6 +1133,8 @@
                 "
               />
             </div>
+            
+           
           </form>
         </div>
       </section>
@@ -1158,6 +1189,9 @@
     </a>
     <!--==================== SWIPER JS ====================-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Google reCaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="./assets/js/main.js"></script>
